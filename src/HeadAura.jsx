@@ -1,8 +1,9 @@
 import React from 'react'
 import './main.css'
+import { ComingSoon } from './ComingSoon'
 
 export const HeadAura = () => {
   return (
-    <h1>Head Aura</h1>
+    <ComingSoon />
   )
 }

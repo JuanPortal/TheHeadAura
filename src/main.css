@@ -4,3 +4,23 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+.coming-soon {
+    width: 100%;
+    height: 100vh;
+    background: url('https://firebasestorage.googleapis.com/v0/b/head-aura.appspot.com/o/background.jpg?alt=media&token=24270d26-d9ef-43c1-969c-39332eb0c9d3');
+}
+
+.coming-soon .container {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff7c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coming-soon .container .countdown {
+    display: flex;
+}
