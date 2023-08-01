@@ -1,10 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTiktok } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 export const ComingSoon = () => {
+
+    const [days, setDays] = useState(0)
+    const [hours, setHours] = useState(0)
+    const [minutes, setMinutes] = useState(0)
+    const [seconds, setSeconds] = useState(0)
+
+    useEffect(() => {
+        const updateCountdown = () => {
+            const launchdate = new Date("Jan 1, 2024 00:00:00").getTime();
+            const currentDate = new Date().getTime();
+            const totalSeconds = (launchdate - currentDate);
+
+            setDays(Math.floor(totalSeconds / (24 * 60 * 60 * 1000)));
+            setHours(Math.floor(totalSeconds % (24 * 60 * 60 * 1000) / (60 * 60 * 1000)));
+            setMinutes(Math.floor(totalSeconds % (60 * 60 * 1000) / (60 * 1000)));
+            setSeconds(Math.floor(totalSeconds % (60 * 1000) / 1000));
+        };
+
+        const interval = setInterval(updateCountdown, 1000);
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className="coming-soon">
             <div className="container">
@@ -18,19 +40,19 @@ export const ComingSoon = () => {
                     </div>
                     <div className="countdown">
                         <div className="days">
-                            <div className="number">4</div>
+                            <div className="number">{days}</div>
                             <p>Days</p>
                         </div>
                         <div className="hours">
-                            <div className="number">3</div>
+                            <div className="number">{hours}</div>
                             <p>Hours</p>
                         </div>
                         <div className="minutes">
-                            <div className="number">2</div>
+                            <div className="number">{minutes}</div>
                             <p>Minutes</p>
                         </div>
                         <div className="seconds">
-                            <div className="number">1</div>
+                            <div className="number">{seconds}</div>
                             <p>Seconds</p>
                         </div>
                     </div>

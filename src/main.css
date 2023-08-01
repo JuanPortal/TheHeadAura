@@ -9,6 +9,9 @@
     width: 100%;
     height: 100vh;
     background: url('https://firebasestorage.googleapis.com/v0/b/head-aura.appspot.com/o/background.png?alt=media&token=e92b2cf2-0d0c-442f-9202-c53649181c84');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .coming-soon .container {
