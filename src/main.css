@@ -8,7 +8,8 @@
 .coming-soon {
     width: 100%;
     height: 100vh;
-    background: url('https://firebasestorage.googleapis.com/v0/b/head-aura.appspot.com/o/background.png?alt=media&token=e92b2cf2-0d0c-442f-9202-c53649181c84');
+    /* background: url('https://firebasestorage.googleapis.com/v0/b/head-aura.appspot.com/o/background.png?alt=media&token=e92b2cf2-0d0c-442f-9202-c53649181c84'); */
+    background: url('https://firebasestorage.googleapis.com/v0/b/head-aura.appspot.com/o/test.jpg?alt=media&token=3cd1e591-b111-41eb-b430-d454616d3e05');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,22 +18,39 @@
 .coming-soon .container {
     width: 100%;
     height: 100vh;
-    background-color: #000000d0;
+    /* background-color: #000000d0; */
+    background-color: #dae2d5;
+    background-color: #dae2d5d0;
+    /* background-color: #3f6766; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
+    /* color: #fff; */
+    color: #000;
 }
 
 .coming-soon .container header {
     width: 100%;
     /* height: 20vh; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 2.4em;
     margin-top: 2em;
+}
+
+.coming-soon .container header h1 {
+    color: #3f6766;
+    font-size: 3em;
+    font-weight: 600;
+    /* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; */
+}
+
+.coming-soon .container header h2 {
+    font-size: .8em;
+    font-weight: 200;
 }
 
 .coming-soon .container main {
@@ -48,7 +66,13 @@
     align-items: center;
 }
 
+.coming-soon .container main .info h3 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
 .coming-soon .container main .info p {
+    font-size: 1.4em;
     font-weight: 200;
     text-align: center;
 }
@@ -63,7 +87,8 @@
     width: 6em;
     height: 6em;
     border-radius: 50%;
-    border: .0625em solid #fff;
+    /* border: .0625em solid #fff; */
+    border: .125em solid #3f6766;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,6 +121,7 @@
     border-radius: .8em;
     cursor: pointer;
     background-color: #891e1e;
+    background-color: #3f6766;
     color: #fff;
 }
 
@@ -113,19 +139,19 @@
 
 .coming-soon .container main .socials a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     transition: .2s ease-in-out;
 }
 
-.coming-soon .container main .socials a:nth-child(1):hover {
+.coming-soon .container main .socials a:nth-child(1) {
     color: #2e2e2e;
 }
 
-.coming-soon .container main .socials a:nth-child(2):hover {
+.coming-soon .container main .socials a:nth-child(2) {
     color: #dd2a7b;
 }
 
-.coming-soon .container main .socials a:nth-child(3):hover {
+.coming-soon .container main .socials a:nth-child(3) {
     color: #e62117;
 }
 
@@ -136,6 +162,7 @@
     justify-content: center;
     align-items: center;
     background-color: #000000d0;
+    color: #fff;
     font-size: .8em;
 }
 

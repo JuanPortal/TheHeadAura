@@ -32,11 +32,12 @@ export const ComingSoon = () => {
             <div className="container">
                 <header>
                     <h1>Head Aura</h1>
+                    <h2>Hair and scalp treatments</h2>
                 </header>
                 <main>
                     <div className="info">
-                        <h2>COMING SOON</h2>
-                        <p>Our website is under construction, follow us for updates</p>
+                        <h3>COMING SOON!</h3>
+                        <p>Our salon is under construction, follow our socials for updates</p>
                     </div>
                     <div className="countdown">
                         <div className="days">
