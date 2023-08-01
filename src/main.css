@@ -50,6 +50,7 @@
 
 .coming-soon .container main .info p {
     font-weight: 200;
+    text-align: center;
 }
 
 .coming-soon .container main .countdown {
@@ -136,4 +137,41 @@
     align-items: center;
     background-color: #000000d0;
     font-size: .8em;
+}
+
+@media screen and (max-width: 400px) {
+    .coming-soon .container header  {
+        font-size: 1.8em;
+    }
+
+    .coming-soon .container main .info p {
+        margin-top: .5em;
+        font-size: .9em;
+    }
+
+    .coming-soon .container main .countdown {
+        margin: 0 1em;
+    }
+
+    .coming-soon .container main .countdown > div {
+        width: 4.4em;
+        height: 4.4em;
+        font-size: .9em;
+    }
+
+    .coming-soon .container main .countdown > div > p {
+        font-size: .7em;
+    }
+
+    .coming-soon .container main .subscribe input:first-child {
+        width: 15em;
+    }
+
+    .coming-soon .container main .subscribe input:last-child {
+        width: 7em;
+    }
+
+    .coming-soon .container main .socials {
+        font-size: 2em;
+    }
 }
