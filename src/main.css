@@ -39,6 +39,7 @@
     align-items: center;
     font-size: 2.4em;
     margin-top: 2em;
+    text-align: center;
 }
 
 .coming-soon .container header h1 {
@@ -46,6 +47,10 @@
     font-size: 3em;
     font-weight: 600;
     /* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; */
+    text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
 }
 
 .coming-soon .container header h2 {
@@ -83,7 +88,7 @@
     align-items: center;
 }
 
-.coming-soon .container main .countdown > div {
+.coming-soon .container main .countdown>div {
     width: 6em;
     height: 6em;
     border-radius: 50%;
@@ -167,8 +172,17 @@
 }
 
 @media screen and (max-width: 400px) {
-    .coming-soon .container header  {
-        font-size: 1.8em;
+    .coming-soon .container header h1 {
+        font-size: 1.45em;
+    }
+
+    .coming-soon .container header h2 {
+        margin: 0 .5em;
+        font-size: .5em;
+    }
+
+    .coming-soon .container main .info h3 {
+        font-size: 1.6em;
     }
 
     .coming-soon .container main .info p {
@@ -180,13 +194,13 @@
         margin: 0 1em;
     }
 
-    .coming-soon .container main .countdown > div {
+    .coming-soon .container main .countdown>div {
         width: 4.4em;
         height: 4.4em;
         font-size: .9em;
     }
 
-    .coming-soon .container main .countdown > div > p {
+    .coming-soon .container main .countdown>div>p {
         font-size: .7em;
     }
 
